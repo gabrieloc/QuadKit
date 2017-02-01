@@ -7,17 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2AE56821E36DA4400A52111 /* QuadKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AE56801E36DA4400A52111 /* QuadKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2214CF21E41FC1500736446 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
+		B2214D021E41FFB100736446 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2214CFB1E41FF4F00736446 /* SwiftSocket.framework */; };
+		B238C9641E46D7BF003A7E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C95C1E46D7BF003A7E84 /* AppDelegate.swift */; };
+		B238C9651E46D7BF003A7E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B238C95D1E46D7BF003A7E84 /* Assets.xcassets */; };
+		B238C9661E46D7BF003A7E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B238C95E1E46D7BF003A7E84 /* LaunchScreen.storyboard */; };
+		B238C9671E46D7BF003A7E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B238C9601E46D7BF003A7E84 /* Main.storyboard */; };
+		B238C9871E46D7CE003A7E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9811E46D7CE003A7E84 /* AppDelegate.swift */; };
+		B238C9881E46D7CE003A7E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B238C9821E46D7CE003A7E84 /* Assets.xcassets */; };
+		B238C98B1E46D7CE003A7E84 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9861E46D7CE003A7E84 /* ExampleViewController.swift */; };
+		B238C98D1E46DA13003A7E84 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9861E46D7CE003A7E84 /* ExampleViewController.swift */; };
+		B238C9921E46E4AD003A7E84 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9911E46E4AD003A7E84 /* ExampleView.swift */; };
+		B238C9941E46E4C9003A7E84 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9931E46E4C9003A7E84 /* ExampleView.swift */; };
+		B238C9971E46EF8D003A7E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B238C9831E46D7CE003A7E84 /* Main.storyboard */; };
+		B238C9981E46EFA5003A7E84 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B238C9851E46D7CE003A7E84 /* Info.plist */; };
+		B238C99C1E46F2BE003A7E84 /* QuadKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */; };
+		B238C9A11E470450003A7E84 /* QuadKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; };
+		B238C9A21E470450003A7E84 /* QuadKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B238C9A71E4704A6003A7E84 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2214CFB1E41FF4F00736446 /* SwiftSocket.framework */; };
+		B238C9A81E4704A6003A7E84 /* SwiftSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2214CFB1E41FF4F00736446 /* SwiftSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2AE56A01E36E66600A52111 /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
+		B2CFD7901E4383FC0093C526 /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
+		B2CFD7921E4384130093C526 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
+		B2D161411E4EB46300A47871 /* IdentificationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* IdentificationSupport.swift */; };
+		B2D161421E4EB46300A47871 /* IdentificationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* IdentificationSupport.swift */; };
+		B2D161441E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
+		B2D161451E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
+		B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
+		B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B2214CFA1E41FF4F00736446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 377DAA691DCDE40200009697;
+			remoteInfo = "SwiftSocket iOS";
+		};
+		B2214CFC1E41FF4F00736446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 377DAA761DCDE45D00009697;
+			remoteInfo = "SwiftSocket macOS";
+		};
+		B2214CFE1E41FF4F00736446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37454ECA1E06158200800AE5;
+			remoteInfo = "SwiftSocket tvOS";
+		};
+		B2214D001E41FF4F00736446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 375C482D1DDC4C56008C701D;
+			remoteInfo = "iOS Example";
+		};
+		B2214D031E41FFC600736446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 377DAA681DCDE40200009697;
+			remoteInfo = "SwiftSocket iOS";
+		};
+		B238C9951E46EE7A003A7E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2AE56741E36DA4400A52111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2CFD77F1E43839B0093C526;
+			remoteInfo = QuadKit_macOS;
+		};
+		B238C9A31E470450003A7E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2AE56741E36DA4400A52111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2AE567C1E36DA4400A52111;
+			remoteInfo = QuadKit_iOS;
+		};
+		B238C9A91E4704A6003A7E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 377DAA681DCDE40200009697;
+			remoteInfo = "SwiftSocket iOS";
+		};
+		B2CFD78D1E4383B10093C526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 377DAA751DCDE45D00009697;
+			remoteInfo = "SwiftSocket macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B238C9A51E470450003A7E84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B238C9A21E470450003A7E84 /* QuadKit_iOS.framework in Embed Frameworks */,
+				B238C9A81E4704A6003A7E84 /* SwiftSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B2AE567D1E36DA4400A52111 /* QuadKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2AE56801E36DA4400A52111 /* QuadKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadKit.h; sourceTree = "<group>"; };
-		B2AE56811E36DA4400A52111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2214CF11E41FC1500736446 /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSocket.xcodeproj; path = SwiftSocket/SwiftSocket.xcodeproj; sourceTree = "<group>"; };
+		B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuadKit macOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B238C9441E46D595003A7E84 /* QuadKit iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuadKit iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B238C95C1E46D7BF003A7E84 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B238C95D1E46D7BF003A7E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B238C95F1E46D7BF003A7E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B238C9611E46D7BF003A7E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B238C9621E46D7BF003A7E84 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B238C9811E46D7CE003A7E84 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B238C9821E46D7CE003A7E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B238C9841E46D7CE003A7E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B238C9851E46D7CE003A7E84 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B238C9861E46D7CE003A7E84 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = ../macOS/ExampleViewController.swift; sourceTree = "<group>"; };
+		B238C9911E46E4AD003A7E84 /* ExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleView.swift; path = "QuadKit Examples/macOS/ExampleView.swift"; sourceTree = SOURCE_ROOT; };
+		B238C9931E46E4C9003A7E84 /* ExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AE569F1E36E66600A52111 /* QuadClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadClient.swift; sourceTree = "<group>"; };
+		B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D161401E4EB46300A47871 /* IdentificationSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationSupport.swift; sourceTree = "<group>"; };
+		B2D161431E4EC2E800A47871 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D1614E1E4EC74500A47871 /* EachineE10W.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachineE10W.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B238C91F1E45A05F003A7E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B238C99C1E46F2BE003A7E84 /* QuadKit_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B238C9411E46D595003A7E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B238C9A11E470450003A7E84 /* QuadKit_iOS.framework in Frameworks */,
+				B238C9A71E4704A6003A7E84 /* SwiftSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2AE56791E36DA4400A52111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2214D021E41FFB100736446 /* SwiftSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CFD77C1E43839B0093C526 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -27,10 +179,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2214CF41E41FF4F00736446 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2214CFB1E41FF4F00736446 /* SwiftSocket.framework */,
+				B2214CFD1E41FF4F00736446 /* SwiftSocket.framework */,
+				B2214CFF1E41FF4F00736446 /* SwiftSocket.framework */,
+				B2214D011E41FF4F00736446 /* iOS Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B238C95B1E46D7BF003A7E84 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				B238C9861E46D7CE003A7E84 /* ExampleViewController.swift */,
+				B238C98C1E46D9F4003A7E84 /* iOS */,
+				B238C9801E46D7CE003A7E84 /* macOS */,
+			);
+			name = Examples;
+			path = "QuadKit Examples/iOS";
+			sourceTree = "<group>";
+		};
+		B238C9801E46D7CE003A7E84 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B238C9811E46D7CE003A7E84 /* AppDelegate.swift */,
+				B238C9911E46E4AD003A7E84 /* ExampleView.swift */,
+				B238C9821E46D7CE003A7E84 /* Assets.xcassets */,
+				B238C9831E46D7CE003A7E84 /* Main.storyboard */,
+				B238C9851E46D7CE003A7E84 /* Info.plist */,
+			);
+			name = macOS;
+			path = ../macOS;
+			sourceTree = "<group>";
+		};
+		B238C98C1E46D9F4003A7E84 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B238C95C1E46D7BF003A7E84 /* AppDelegate.swift */,
+				B238C9931E46E4C9003A7E84 /* ExampleView.swift */,
+				B238C95D1E46D7BF003A7E84 /* Assets.xcassets */,
+				B238C95E1E46D7BF003A7E84 /* LaunchScreen.storyboard */,
+				B238C9601E46D7BF003A7E84 /* Main.storyboard */,
+				B238C9621E46D7BF003A7E84 /* Info.plist */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		B2AE56731E36DA4400A52111 = {
 			isa = PBXGroup;
 			children = (
-				B2AE567F1E36DA4400A52111 /* QuadKit */,
+				B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */,
+				B238C95B1E46D7BF003A7E84 /* Examples */,
+				B2D1614D1E4EC51B00A47871 /* Identification Support */,
+				B2AE567F1E36DA4400A52111 /* Source */,
 				B2AE567E1E36DA4400A52111 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -38,17 +241,32 @@
 		B2AE567E1E36DA4400A52111 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2AE567D1E36DA4400A52111 /* QuadKit.framework */,
+				B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */,
+				B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */,
+				B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */,
+				B238C9441E46D595003A7E84 /* QuadKit iOS Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2AE567F1E36DA4400A52111 /* QuadKit */ = {
+		B2AE567F1E36DA4400A52111 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B2AE56801E36DA4400A52111 /* QuadKit.h */,
-				B2AE56811E36DA4400A52111 /* Info.plist */,
+				B2AE569F1E36E66600A52111 /* QuadClient.swift */,
+				B2D161401E4EB46300A47871 /* IdentificationSupport.swift */,
+				B2214CF11E41FC1500736446 /* InputController.swift */,
+				B2D161431E4EC2E800A47871 /* Info.plist */,
 			);
+			name = Source;
+			path = QuadKit;
+			sourceTree = "<group>";
+		};
+		B2D1614D1E4EC51B00A47871 /* Identification Support */ = {
+			isa = PBXGroup;
+			children = (
+				B2D1614E1E4EC74500A47871 /* EachineE10W.swift */,
+			);
+			name = "Identification Support";
 			path = QuadKit;
 			sourceTree = "<group>";
 		};
@@ -59,16 +277,60 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2AE56821E36DA4400A52111 /* QuadKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CFD77D1E43839B0093C526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B2AE567C1E36DA4400A52111 /* QuadKit */ = {
+		B238C9211E45A05F003A7E84 /* QuadKit macOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2AE56851E36DA4400A52111 /* Build configuration list for PBXNativeTarget "QuadKit" */;
+			buildConfigurationList = B238C92E1E45A060003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit macOS Example" */;
+			buildPhases = (
+				B238C91E1E45A05F003A7E84 /* Sources */,
+				B238C91F1E45A05F003A7E84 /* Frameworks */,
+				B238C9201E45A05F003A7E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B238C9961E46EE7A003A7E84 /* PBXTargetDependency */,
+			);
+			name = "QuadKit macOS Example";
+			productName = "QuadKit Example";
+			productReference = B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B238C9431E46D595003A7E84 /* QuadKit iOS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B238C9531E46D595003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit iOS Example" */;
+			buildPhases = (
+				B238C9401E46D595003A7E84 /* Sources */,
+				B238C9411E46D595003A7E84 /* Frameworks */,
+				B238C9421E46D595003A7E84 /* Resources */,
+				B238C9A51E470450003A7E84 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B238C9A41E470450003A7E84 /* PBXTargetDependency */,
+				B238C9AA1E4704A6003A7E84 /* PBXTargetDependency */,
+			);
+			name = "QuadKit iOS Example";
+			productName = "QuadKit iOS Example";
+			productReference = B238C9441E46D595003A7E84 /* QuadKit iOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2AE567C1E36DA4400A52111 /* QuadKit_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2AE56851E36DA4400A52111 /* Build configuration list for PBXNativeTarget "QuadKit_iOS" */;
 			buildPhases = (
 				B2AE56781E36DA4400A52111 /* Sources */,
 				B2AE56791E36DA4400A52111 /* Frameworks */,
@@ -78,10 +340,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				B2214D041E41FFC600736446 /* PBXTargetDependency */,
 			);
-			name = QuadKit;
+			name = QuadKit_iOS;
 			productName = QuadKit;
-			productReference = B2AE567D1E36DA4400A52111 /* QuadKit.framework */;
+			productReference = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2CFD77F1E43839B0093C526 /* QuadKit_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CFD7891E43839B0093C526 /* Build configuration list for PBXNativeTarget "QuadKit_macOS" */;
+			buildPhases = (
+				B2CFD77B1E43839B0093C526 /* Sources */,
+				B2CFD77C1E43839B0093C526 /* Frameworks */,
+				B2CFD77D1E43839B0093C526 /* Headers */,
+				B2CFD77E1E43839B0093C526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2CFD78E1E4383B10093C526 /* PBXTargetDependency */,
+			);
+			name = QuadKit_macOS;
+			productName = QuadKit_macOS;
+			productReference = B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -90,13 +372,29 @@
 		B2AE56741E36DA4400A52111 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Gabrieloc;
 				TargetAttributes = {
-					B2AE567C1E36DA4400A52111 = {
+					B238C9211E45A05F003A7E84 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4P4TWK8BKZ;
 						ProvisioningStyle = Automatic;
+					};
+					B238C9431E46D595003A7E84 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = USYSB33394;
+						ProvisioningStyle = Automatic;
+					};
+					B2AE567C1E36DA4400A52111 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = USYSB33394;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+					};
+					B2CFD77F1E43839B0093C526 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -106,38 +404,262 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B2AE56731E36DA4400A52111;
 			productRefGroup = B2AE567E1E36DA4400A52111 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2214CF41E41FF4F00736446 /* Products */;
+					ProjectRef = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				B2AE567C1E36DA4400A52111 /* QuadKit */,
+				B2AE567C1E36DA4400A52111 /* QuadKit_iOS */,
+				B2CFD77F1E43839B0093C526 /* QuadKit_macOS */,
+				B238C9431E46D595003A7E84 /* QuadKit iOS Example */,
+				B238C9211E45A05F003A7E84 /* QuadKit macOS Example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B2214CFB1E41FF4F00736446 /* SwiftSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftSocket.framework;
+			remoteRef = B2214CFA1E41FF4F00736446 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2214CFD1E41FF4F00736446 /* SwiftSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftSocket.framework;
+			remoteRef = B2214CFC1E41FF4F00736446 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2214CFF1E41FF4F00736446 /* SwiftSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftSocket.framework;
+			remoteRef = B2214CFE1E41FF4F00736446 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2214D011E41FF4F00736446 /* iOS Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "iOS Example.app";
+			remoteRef = B2214D001E41FF4F00736446 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		B238C9201E45A05F003A7E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B238C9981E46EFA5003A7E84 /* Info.plist in Resources */,
+				B238C9971E46EF8D003A7E84 /* Main.storyboard in Resources */,
+				B238C9881E46D7CE003A7E84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B238C9421E46D595003A7E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B238C9671E46D7BF003A7E84 /* Main.storyboard in Resources */,
+				B238C9651E46D7BF003A7E84 /* Assets.xcassets in Resources */,
+				B238C9661E46D7BF003A7E84 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2AE567B1E36DA4400A52111 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D161441E4EC2E800A47871 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CFD77E1E43839B0093C526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D161451E4EC2E800A47871 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B238C91E1E45A05F003A7E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B238C98B1E46D7CE003A7E84 /* ExampleViewController.swift in Sources */,
+				B238C9871E46D7CE003A7E84 /* AppDelegate.swift in Sources */,
+				B238C9921E46E4AD003A7E84 /* ExampleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B238C9401E46D595003A7E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B238C98D1E46DA13003A7E84 /* ExampleViewController.swift in Sources */,
+				B238C9641E46D7BF003A7E84 /* AppDelegate.swift in Sources */,
+				B238C9941E46E4C9003A7E84 /* ExampleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2AE56781E36DA4400A52111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */,
+				B2D161411E4EB46300A47871 /* IdentificationSupport.swift in Sources */,
+				B2214CF21E41FC1500736446 /* InputController.swift in Sources */,
+				B2AE56A01E36E66600A52111 /* QuadClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CFD77B1E43839B0093C526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */,
+				B2CFD7901E4383FC0093C526 /* QuadClient.swift in Sources */,
+				B2D161421E4EB46300A47871 /* IdentificationSupport.swift in Sources */,
+				B2CFD7921E4384130093C526 /* InputController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B2214D041E41FFC600736446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSocket iOS";
+			targetProxy = B2214D031E41FFC600736446 /* PBXContainerItemProxy */;
+		};
+		B238C9961E46EE7A003A7E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2CFD77F1E43839B0093C526 /* QuadKit_macOS */;
+			targetProxy = B238C9951E46EE7A003A7E84 /* PBXContainerItemProxy */;
+		};
+		B238C9A41E470450003A7E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2AE567C1E36DA4400A52111 /* QuadKit_iOS */;
+			targetProxy = B238C9A31E470450003A7E84 /* PBXContainerItemProxy */;
+		};
+		B238C9AA1E4704A6003A7E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSocket iOS";
+			targetProxy = B238C9A91E4704A6003A7E84 /* PBXContainerItemProxy */;
+		};
+		B2CFD78E1E4383B10093C526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSocket macOS";
+			targetProxy = B2CFD78D1E4383B10093C526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B238C95E1E46D7BF003A7E84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B238C95F1E46D7BF003A7E84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B238C9601E46D7BF003A7E84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B238C9611E46D7BF003A7E84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B238C9831E46D7CE003A7E84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B238C9841E46D7CE003A7E84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B238C92F1E45A060003A7E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4P4TWK8BKZ;
+				INFOPLIST_FILE = "QuadKit Examples/macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B238C9301E45A060003A7E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4P4TWK8BKZ;
+				INFOPLIST_FILE = "QuadKit Examples/macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B238C9541E46D595003A7E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = USYSB33394;
+				INFOPLIST_FILE = "QuadKit Examples/iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B238C9551E46D595003A7E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = USYSB33394;
+				INFOPLIST_FILE = "QuadKit Examples/iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B2AE56831E36DA4400A52111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -240,18 +762,23 @@
 		B2AE56861E36DA4400A52111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4P4TWK8BKZ;
+				DEVELOPMENT_TEAM = USYSB33394;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = QuadKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,14 +786,18 @@
 		B2AE56871E36DA4400A52111 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4P4TWK8BKZ;
+				DEVELOPMENT_TEAM = USYSB33394;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = QuadKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,9 +806,73 @@
 			};
 			name = Release;
 		};
+		B2CFD78A1E43839B0093C526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = QuadKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2CFD78B1E43839B0093C526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = QuadKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B238C92E1E45A060003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit macOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B238C92F1E45A060003A7E84 /* Debug */,
+				B238C9301E45A060003A7E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B238C9531E46D595003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B238C9541E46D595003A7E84 /* Debug */,
+				B238C9551E46D595003A7E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2AE56771E36DA4400A52111 /* Build configuration list for PBXProject "QuadKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -287,13 +882,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2AE56851E36DA4400A52111 /* Build configuration list for PBXNativeTarget "QuadKit" */ = {
+		B2AE56851E36DA4400A52111 /* Build configuration list for PBXNativeTarget "QuadKit_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2AE56861E36DA4400A52111 /* Debug */,
 				B2AE56871E36DA4400A52111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2CFD7891E43839B0093C526 /* Build configuration list for PBXNativeTarget "QuadKit_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CFD78A1E43839B0093C526 /* Debug */,
+				B2CFD78B1E43839B0093C526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
