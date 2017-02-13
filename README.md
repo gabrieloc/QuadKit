@@ -55,7 +55,7 @@ Identification data can be found by running a tool like `tcpdump` or `Wireshark`
 5. Open the software provided by your quadcopter's manufacturer and access the input controls
 6. Stop capturing and find what looks like identification data. It should consistently look the same every time you try to connect the app, and will appear before you begin receiving any form of input or video data
 7. Create a new class in `QuadKit` representing your quadcopter model, and have it adopt `QuadcopterModel`
-8. In your class' implementation of `-identifcation`, return the data your recorded in the form of byte arrays
+8. In your class' implementation of `-identification`, return the data your recorded in the form of byte arrays
 
 Apple provides step by step instructions for creating using various network debugging tools: [Technical Q&A QA1176: Getting a Packet Trace](https://developer.apple.com/library/content/qa/qa1176/_index.html).
 
