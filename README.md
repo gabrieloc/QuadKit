@@ -42,15 +42,13 @@ iOS and macOS samples can be found inside the `Examples/` directory.
 
 ## Contributing
 
-While the format for input data appears to be generic across models (needs to be verified), identification data likely isn't. For this reason, `IdentificationSupport` defines a protocol `QuadcopterModel`, which individual models are intended to provide an implementation of. The protocol requires adopters to provide identification data, a stream of bytes, which get broadcasted to the quadcopter before anything else.
+While the format for input data appears to be generic across models (needs to be verified), identification data likely isn't. For this reason, `IdentificationSupport` defines a protocol `QuadcopterModel`, which individual models are intended to provide an implementation for. The protocol requires adopters to provide identification data in the form of a collection of bytes, which get broadcasted to the quadcopter before anything else.
 
 Identification data can be found by running a tool like `tcpdump` or `Wireshark` to get a packet trace, and collecting the first few packets your device sends your quadcopter in the software provided by it's manufacturer.
 
 ### Example
-1. Connect your device via USB and create a RVI:
-`$ rvictl -s (DEVICE UDID)`
-2. Ensure the interface was created by running:
-`$ ifconfig -l`
+1. Connect your device via USB and create a RVI: `$ rvictl -s (DEVICE UDID)`
+2. Ensure the interface was created by running: `$ ifconfig -l`
 3. Verify that `rvi0` exists.
 4. Turn on your quadcopter and join it's Wi-Fi network.
 5. In a tool like [Wireshark](https://www.wireshark.org), begin capturing `rvi0`
