@@ -47,15 +47,15 @@ While the format for input data appears to be generic across models (needs to be
 Identification data can be found by running a tool like `tcpdump` or `Wireshark` to get a packet trace, and collecting the first few packets your device sends your quadcopter in the software provided by it's manufacturer.
 
 ### Example
+
 1. Connect your device via USB and create a RVI: `$ rvictl -s (DEVICE UDID)`
-2. Ensure the interface was created by running: `$ ifconfig -l`
-3. Verify that `rvi0` exists.
-4. Turn on your quadcopter and join it's Wi-Fi network.
-5. In a tool like [Wireshark](https://www.wireshark.org), begin capturing `rvi0`
-6. Open the software provided by your quadcopter's manufacturer and access the input controls
-7. Stop capturing and find what looks like identification data. It should consistently look the same every time you try to connect the app, and will appear before you begin receiving any form of input or video data
-8. Record that data in byte arrays and have returned by your new `QuadcopterModel` adopting class in `QuadKit` in the `-identification` getter.
- 
+2. Ensure the remote interface was created by running: `$ ifconfig -l` and verifying `rvi0` exists
+3. Turn on your quadcopter and join it's Wi-Fi network
+4. In a tool like [Wireshark](https://www.wireshark.org), begin capturing `rvi0`
+5. Open the software provided by your quadcopter's manufacturer and access the input controls
+6. Stop capturing and find what looks like identification data. It should consistently look the same every time you try to connect the app, and will appear before you begin receiving any form of input or video data
+7. Create a new class in `QuadKit` representing your quadcopter model, and have it adopt `QuadcopterModel`
+8. In your class' implementation of `-identifcation`, return the data your recorded in the form of byte arrays
 
 Apple provides step by step instructions for creating using various network debugging tools: [Technical Q&A QA1176: Getting a Packet Trace](https://developer.apple.com/library/content/qa/qa1176/_index.html).
 
