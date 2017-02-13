@@ -14,7 +14,7 @@ QuadKit relies on [SwiftSocket](https://github.com/swiftsocket/SwiftSocket), whi
 
 Ensure any project using this framework includes `QuadKit.framework` and `SwiftSocket.framework` as embedded binaries.
 
-To connect to your quadcopter, create an instance of `QuadClient` and call `-connect:`. Ensure that device has been connected to the Wi-Fi network created by your quadcopter, before attempting to connect. Once a connection has been established, the client expects to be passed an `InputState` object via `-updateInput:`, in response to user interaction.
+To connect to your quadcopter, create an instance of `QuadClient` and call `-connect:`. Ensure that your device has been connected to the Wi-Fi network created by your quadcopter, before attempting to connect. Once a connection has been established, the client expects to be passed an `InputState` object via `-updateInput:`, in response to user interaction.
 
 ### Example
 
