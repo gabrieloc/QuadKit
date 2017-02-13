@@ -10,7 +10,7 @@ import Foundation
 
 struct EachineE10W: QuadcopterModel {
 	
-	var identificationConversation: Conversation {
+	var identification: Conversation {
 		let packets = identification1 + [identification2] + [inputIdentification]
 		return Conversation(topic: "Eachine E10W Identification", packets: packets)
 	}
