@@ -35,6 +35,11 @@
 		B2D161451E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
 		B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
 		B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
+		B2DE7AEC1E5872D700F44FEB /* QuadKit_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B2DE7AEA1E5872D700F44FEB /* QuadKit_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2DE7AF41E5872FB00F44FEB /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
+		B2DE7AF51E5872FB00F44FEB /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
+		B2DE7AF61E5872FB00F44FEB /* IdentificationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* IdentificationSupport.swift */; };
+		B2DE7AF71E5872FB00F44FEB /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,20 @@
 			remoteGlobalIDString = 377DAA751DCDE45D00009697;
 			remoteInfo = "SwiftSocket macOS";
 		};
+		B2DE7B0C1E58743A00F44FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2DE7AFD1E58740400F44FEB;
+			remoteInfo = "SwiftSocket watchOS";
+		};
+		B2DE7B0E1E58743E00F44FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2214CF31E41FF4F00736446 /* SwiftSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DE7AFC1E58740400F44FEB;
+			remoteInfo = "SwiftSocket watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -141,6 +160,9 @@
 		B2D161401E4EB46300A47871 /* IdentificationSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationSupport.swift; sourceTree = "<group>"; };
 		B2D161431E4EC2E800A47871 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D1614E1E4EC74500A47871 /* EachineE10W.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachineE10W.swift; sourceTree = "<group>"; };
+		B2DE7AE81E5872D700F44FEB /* QuadKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DE7AEA1E5872D700F44FEB /* QuadKit_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadKit_watchOS.h; sourceTree = "<group>"; };
+		B2DE7AEB1E5872D700F44FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +198,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DE7AE41E5872D700F44FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -185,6 +214,7 @@
 				B2214CFB1E41FF4F00736446 /* SwiftSocket.framework */,
 				B2214CFD1E41FF4F00736446 /* SwiftSocket.framework */,
 				B2214CFF1E41FF4F00736446 /* SwiftSocket.framework */,
+				B2DE7B0D1E58743A00F44FEB /* SwiftSocket watchOS.framework */,
 				B2214D011E41FF4F00736446 /* iOS Example.app */,
 			);
 			name = Products;
@@ -234,6 +264,7 @@
 				B238C95B1E46D7BF003A7E84 /* Examples */,
 				B2D1614D1E4EC51B00A47871 /* Identification Support */,
 				B2AE567F1E36DA4400A52111 /* Source */,
+				B2DE7AE91E5872D700F44FEB /* QuadKit_watchOS */,
 				B2AE567E1E36DA4400A52111 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -245,6 +276,7 @@
 				B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */,
 				B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */,
 				B238C9441E46D595003A7E84 /* QuadKit iOS Example.app */,
+				B2DE7AE81E5872D700F44FEB /* QuadKit_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +302,15 @@
 			path = QuadKit;
 			sourceTree = "<group>";
 		};
+		B2DE7AE91E5872D700F44FEB /* QuadKit_watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				B2DE7AEA1E5872D700F44FEB /* QuadKit_watchOS.h */,
+				B2DE7AEB1E5872D700F44FEB /* Info.plist */,
+			);
+			path = QuadKit_watchOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -284,6 +325,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DE7AE51E5872D700F44FEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DE7AEC1E5872D700F44FEB /* QuadKit_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +415,25 @@
 			productReference = B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B2DE7AE71E5872D700F44FEB /* QuadKit_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DE7AF11E5872D700F44FEB /* Build configuration list for PBXNativeTarget "QuadKit_watchOS" */;
+			buildPhases = (
+				B2DE7AE31E5872D700F44FEB /* Sources */,
+				B2DE7AE41E5872D700F44FEB /* Frameworks */,
+				B2DE7AE51E5872D700F44FEB /* Headers */,
+				B2DE7AE61E5872D700F44FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DE7B0F1E58743E00F44FEB /* PBXTargetDependency */,
+			);
+			name = QuadKit_watchOS;
+			productName = QuadKit_watchOS;
+			productReference = B2DE7AE81E5872D700F44FEB /* QuadKit_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -396,6 +464,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Manual;
 					};
+					B2DE7AE71E5872D700F44FEB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = USYSB33394;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B2AE56771E36DA4400A52111 /* Build configuration list for PBXProject "QuadKit" */;
@@ -419,6 +492,7 @@
 			targets = (
 				B2AE567C1E36DA4400A52111 /* QuadKit_iOS */,
 				B2CFD77F1E43839B0093C526 /* QuadKit_macOS */,
+				B2DE7AE71E5872D700F44FEB /* QuadKit_watchOS */,
 				B238C9431E46D595003A7E84 /* QuadKit iOS Example */,
 				B238C9211E45A05F003A7E84 /* QuadKit macOS Example */,
 			);
@@ -452,6 +526,13 @@
 			fileType = wrapper.application;
 			path = "iOS Example.app";
 			remoteRef = B2214D001E41FF4F00736446 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2DE7B0D1E58743A00F44FEB /* SwiftSocket watchOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "SwiftSocket watchOS.framework";
+			remoteRef = B2DE7B0C1E58743A00F44FEB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -490,6 +571,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D161451E4EC2E800A47871 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DE7AE61E5872D700F44FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +626,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DE7AE31E5872D700F44FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DE7AF41E5872FB00F44FEB /* EachineE10W.swift in Sources */,
+				B2DE7AF51E5872FB00F44FEB /* QuadClient.swift in Sources */,
+				B2DE7AF61E5872FB00F44FEB /* IdentificationSupport.swift in Sources */,
+				B2DE7AF71E5872FB00F44FEB /* InputController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -565,6 +664,11 @@
 			isa = PBXTargetDependency;
 			name = "SwiftSocket macOS";
 			targetProxy = B2CFD78D1E4383B10093C526 /* PBXContainerItemProxy */;
+		};
+		B2DE7B0F1E58743E00F44FEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSocket watchOS";
+			targetProxy = B2DE7B0E1E58743E00F44FEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -852,6 +956,52 @@
 			};
 			name = Release;
 		};
+		B2DE7AED1E5872D700F44FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = USYSB33394;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuadKit_watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		B2DE7AEE1E5872D700F44FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = USYSB33394;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuadKit_watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -899,6 +1049,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B2DE7AF11E5872D700F44FEB /* Build configuration list for PBXNativeTarget "QuadKit_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DE7AED1E5872D700F44FEB /* Debug */,
+				B2DE7AEE1E5872D700F44FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
