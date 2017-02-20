@@ -1,6 +1,6 @@
-# QuadKit
+![QuadKit](QuadKit.png)
 
-QuadKit provides a simple set of interfaces for connecting and sending input data to your Wi-Fi enabled quadcopter.
+**A simple set of interfaces for connecting and sending input data to your Wi-Fi enabled quadcopter**
 
 ## Installation
 
