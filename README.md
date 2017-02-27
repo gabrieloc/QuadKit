@@ -4,11 +4,12 @@
 
 ## Installation
 
-QuadKit relies on [SwiftSocket](https://github.com/swiftsocket/SwiftSocket), which lives as a git submodule. After cloning this repo, call:
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-`git submodule update --init --recursive`
+Add this to your Cartfile:
 
-*Carthage and CocoaPods support coming soon*
+`github "gabrieloc/QuadKit"`
+
 
 ## Integration
 
