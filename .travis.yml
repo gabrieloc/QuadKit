@@ -1,4 +1,4 @@
-language: swift
+language: objective-c
 osx_image: xcode8.2
 xcode_project: QuadKit.xcodeproj
 xcode_scheme: QuadKit_iOS #4
