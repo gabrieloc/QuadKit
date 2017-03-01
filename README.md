@@ -1,10 +1,12 @@
 ![QuadKit](QuadKit.png)
 
-**A simple set of interfaces for connecting and sending input data to your Wi-Fi enabled quadcopter**
+**A simple set of interfaces for communicating with your Wi-Fi enabled quadcopter**.
 
-## Installation
+QuadKit powers [SCARAB](https://itunes.apple.com/us/app/scarab-rc-controller-for-quadcopters/id1205279859), an RC controller for iOS. Read about the making of QuadKit: [Building a Quadcopter Controller for iOS and Open-Sourcing the Internals](https://medium.com/@_gabrieloc/building-a-quadcopter-controller-for-ios-and-open-sourcing-the-internals-3bbc7f526ed2#.8c7aaatsv)
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
+## Installation
 
 Add this to your Cartfile:
 
@@ -43,9 +45,9 @@ iOS and macOS samples can be found inside the `Examples/` directory.
 
 ## Contributing
 
-While the format for input data appears to be generic across models (needs to be verified), identification data likely isn't. For this reason, `IdentificationSupport` defines a protocol `QuadcopterModel`, which individual models are intended to provide an implementation for. The protocol requires adopters to provide identification data in the form of a collection of bytes, which get broadcasted to the quadcopter before anything else.
+While the format for input data appears to be generic across models (needs to be verified), it's possible that handshake data isn't. For this reason, `BindingSupport` defines a protocol `QuadcopterModel`, which individual models can use for providing this data.
 
-Identification data can be found by running a tool like `tcpdump` or `Wireshark` to get a packet trace, and collecting the first few packets your device sends your quadcopter in the software provided by it's manufacturer.
+Handshake data can be found by running a tool like `tcpdump` or `Wireshark` to get a packet trace, and collecting the first few packets your device sends your quadcopter in the software provided by it's manufacturer.
 
 ### Example
 
@@ -58,9 +60,10 @@ Identification data can be found by running a tool like `tcpdump` or `Wireshark`
 7. Create a new class in `QuadKit` representing your quadcopter model, and have it adopt `QuadcopterModel`
 8. In your class' implementation of `-identification`, return the data your recorded in the form of byte arrays
 
+
+## Reference
+
 Apple provides step by step instructions for creating using various network debugging tools: [Technical Q&A QA1176: Getting a Packet Trace](https://developer.apple.com/library/content/qa/qa1176/_index.html).
 
-
-
-
+For more information on the protocol, refer to Jim Hung's [Hubsan X4 H107L Quadcopter Control Protocol Specification](http://www.jimhung.co.uk/wp-content/uploads/2014/11/HubsanX4_ProtocolSpec_v1.txt), or his excellent reverse engineering series, [Reverse Engineering a Hubsan X4 Quadcopter](http://www.jimhung.co.uk/?p=1424).
 
