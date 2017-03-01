@@ -1,5 +1,5 @@
 //
-//  InputTests.swift
+//  InputStateTests.swift
 //  QuadKit
 //
 //  Copyright (c) <2017>, Gabriel O'Flaherty-Chan

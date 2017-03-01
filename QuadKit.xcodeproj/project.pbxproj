@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B210CDB61E66E04B004FC046 /* QuadKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; };
-		B210CDBD1E66E06E004FC046 /* InputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDBC1E66E06E004FC046 /* InputTests.swift */; };
-		B210CDBF1E66E148004FC046 /* QuadKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDBE1E66E148004FC046 /* QuadKitTests.swift */; };
+		B210CDBD1E66E06E004FC046 /* InputStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDBC1E66E06E004FC046 /* InputStateTests.swift */; };
 		B210CDC11E66EB6C004FC046 /* InputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDC01E66EB6C004FC046 /* InputState.swift */; };
 		B210CDC21E66EB6C004FC046 /* InputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDC01E66EB6C004FC046 /* InputState.swift */; };
 		B2214CF21E41FC1500736446 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
@@ -82,8 +81,7 @@
 /* Begin PBXFileReference section */
 		B210CDB11E66E04B004FC046 /* QuadKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B210CDB51E66E04B004FC046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B210CDBC1E66E06E004FC046 /* InputTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTests.swift; sourceTree = "<group>"; };
-		B210CDBE1E66E148004FC046 /* QuadKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadKitTests.swift; sourceTree = "<group>"; };
+		B210CDBC1E66E06E004FC046 /* InputStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStateTests.swift; sourceTree = "<group>"; };
 		B210CDC01E66EB6C004FC046 /* InputState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputState.swift; sourceTree = "<group>"; };
 		B2214CF11E41FC1500736446 /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuadKit macOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,8 +155,7 @@
 		B210CDB21E66E04B004FC046 /* QuadKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				B210CDBE1E66E148004FC046 /* QuadKitTests.swift */,
-				B210CDBC1E66E06E004FC046 /* InputTests.swift */,
+				B210CDBC1E66E06E004FC046 /* InputStateTests.swift */,
 				B210CDB51E66E04B004FC046 /* Info.plist */,
 			);
 			path = QuadKitTests;
@@ -510,8 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B210CDBD1E66E06E004FC046 /* InputTests.swift in Sources */,
-				B210CDBF1E66E148004FC046 /* QuadKitTests.swift in Sources */,
+				B210CDBD1E66E06E004FC046 /* InputStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
