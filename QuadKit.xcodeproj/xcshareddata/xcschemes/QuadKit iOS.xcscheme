@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B210CDB01E66E04B004FC046"
+               BuildableName = "QuadKitTests.xctest"
+               BlueprintName = "QuadKitTests"
+               ReferencedContainer = "container:QuadKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B2AE567C1E36DA4400A52111"
+            BuildableName = "QuadKit_iOS.framework"
+            BlueprintName = "QuadKit_iOS"
+            ReferencedContainer = "container:QuadKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
