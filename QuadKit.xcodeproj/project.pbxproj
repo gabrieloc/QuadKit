@@ -26,8 +26,8 @@
 		B2AE56A01E36E66600A52111 /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
 		B2CFD7901E4383FC0093C526 /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
 		B2CFD7921E4384130093C526 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
-		B2D161411E4EB46300A47871 /* IdentificationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* IdentificationSupport.swift */; };
-		B2D161421E4EB46300A47871 /* IdentificationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* IdentificationSupport.swift */; };
+		B2D161411E4EB46300A47871 /* BindingSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* BindingSupport.swift */; };
+		B2D161421E4EB46300A47871 /* BindingSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* BindingSupport.swift */; };
 		B2D161441E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
 		B2D161451E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
 		B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
@@ -86,7 +86,7 @@
 		B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AE569F1E36E66600A52111 /* QuadClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadClient.swift; sourceTree = "<group>"; };
 		B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuadKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2D161401E4EB46300A47871 /* IdentificationSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentificationSupport.swift; sourceTree = "<group>"; };
+		B2D161401E4EB46300A47871 /* BindingSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingSupport.swift; sourceTree = "<group>"; };
 		B2D161431E4EC2E800A47871 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D1614E1E4EC74500A47871 /* EachineE10W.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachineE10W.swift; sourceTree = "<group>"; };
 		B2FDC67B1E646A8F004090F7 /* SwiftSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSocket.framework; path = Carthage/Build/iOS/SwiftSocket.framework; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B238C95B1E46D7BF003A7E84 /* Examples */,
-				B2D1614D1E4EC51B00A47871 /* Identification Support */,
+				B2D1614D1E4EC51B00A47871 /* Binding Support */,
 				B2AE567F1E36DA4400A52111 /* Source */,
 				B2AE567E1E36DA4400A52111 /* Products */,
 				B2FDC67A1E646A8F004090F7 /* Frameworks */,
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				B2AE569F1E36E66600A52111 /* QuadClient.swift */,
-				B2D161401E4EB46300A47871 /* IdentificationSupport.swift */,
+				B2D161401E4EB46300A47871 /* BindingSupport.swift */,
 				B2214CF11E41FC1500736446 /* InputController.swift */,
 				B2D161431E4EC2E800A47871 /* Info.plist */,
 			);
@@ -200,12 +200,12 @@
 			path = QuadKit;
 			sourceTree = "<group>";
 		};
-		B2D1614D1E4EC51B00A47871 /* Identification Support */ = {
+		B2D1614D1E4EC51B00A47871 /* Binding Support */ = {
 			isa = PBXGroup;
 			children = (
 				B2D1614E1E4EC74500A47871 /* EachineE10W.swift */,
 			);
-			name = "Identification Support";
+			name = "Binding Support";
 			path = QuadKit;
 			sourceTree = "<group>";
 		};
@@ -462,7 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */,
-				B2D161411E4EB46300A47871 /* IdentificationSupport.swift in Sources */,
+				B2D161411E4EB46300A47871 /* BindingSupport.swift in Sources */,
 				B2214CF21E41FC1500736446 /* InputController.swift in Sources */,
 				B2AE56A01E36E66600A52111 /* QuadClient.swift in Sources */,
 			);
@@ -474,7 +474,7 @@
 			files = (
 				B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */,
 				B2CFD7901E4383FC0093C526 /* QuadClient.swift in Sources */,
-				B2D161421E4EB46300A47871 /* IdentificationSupport.swift in Sources */,
+				B2D161421E4EB46300A47871 /* BindingSupport.swift in Sources */,
 				B2CFD7921E4384130093C526 /* InputController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

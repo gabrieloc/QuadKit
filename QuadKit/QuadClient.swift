@@ -46,7 +46,7 @@ public class QuadClient {
 	public struct QuadClientError: Error {
 		enum ErrorKind {
 			case connectionTimeout
-			case failedToIdentify
+			case bindingFailed
 		}
 		let kind: ErrorKind
 		let reason: String
@@ -69,8 +69,8 @@ public class QuadClient {
 			return connectionError
 		}
 		
-		if let identificationError = sendIdentification() {
-			return identificationError
+		if let bindingError = performBindingChoreography() {
+			return bindingError
 		}
 		
 		beginBroadcasting()
@@ -88,7 +88,7 @@ public class QuadClient {
 		}
 	}
 	
-	func sendIdentification() -> QuadClientError? {
+	func performBindingChoreography() -> QuadClientError? {
 
 		func isConversationValid(_ conversation: Conversation) -> Bool {
 
@@ -113,7 +113,7 @@ public class QuadClient {
 			$0 && isConversationValid($1)
 		})
 		
-		return identified ? nil : QuadClientError(kind: .failedToIdentify, reason: "One or more identification errors")
+		return identified ? nil : QuadClientError(kind: .bindingFailed, reason: "One or more binding errors")
 	}
 	
 	// MARK: Input
