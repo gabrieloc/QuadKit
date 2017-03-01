@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B210CDB61E66E04B004FC046 /* QuadKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; };
+		B210CDBD1E66E06E004FC046 /* InputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDBC1E66E06E004FC046 /* InputTests.swift */; };
+		B210CDBF1E66E148004FC046 /* QuadKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDBE1E66E148004FC046 /* QuadKitTests.swift */; };
+		B210CDC11E66EB6C004FC046 /* InputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDC01E66EB6C004FC046 /* InputState.swift */; };
+		B210CDC21E66EB6C004FC046 /* InputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CDC01E66EB6C004FC046 /* InputState.swift */; };
 		B2214CF21E41FC1500736446 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
 		B238C9641E46D7BF003A7E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C95C1E46D7BF003A7E84 /* AppDelegate.swift */; };
 		B238C9651E46D7BF003A7E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B238C95D1E46D7BF003A7E84 /* Assets.xcassets */; };
@@ -37,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B210CDB71E66E04B004FC046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2AE56741E36DA4400A52111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2AE567C1E36DA4400A52111;
+			remoteInfo = QuadKit_iOS;
+		};
 		B238C9951E46EE7A003A7E84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2AE56741E36DA4400A52111 /* Project object */;
@@ -68,6 +80,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B210CDB11E66E04B004FC046 /* QuadKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B210CDB51E66E04B004FC046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B210CDBC1E66E06E004FC046 /* InputTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTests.swift; sourceTree = "<group>"; };
+		B210CDBE1E66E148004FC046 /* QuadKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadKitTests.swift; sourceTree = "<group>"; };
+		B210CDC01E66EB6C004FC046 /* InputState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputState.swift; sourceTree = "<group>"; };
 		B2214CF11E41FC1500736446 /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuadKit macOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B238C9441E46D595003A7E84 /* QuadKit iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuadKit iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +111,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B210CDAE1E66E04B004FC046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B210CDB61E66E04B004FC046 /* QuadKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B238C91F1E45A05F003A7E84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +154,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B210CDB21E66E04B004FC046 /* QuadKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B210CDBE1E66E148004FC046 /* QuadKitTests.swift */,
+				B210CDBC1E66E06E004FC046 /* InputTests.swift */,
+				B210CDB51E66E04B004FC046 /* Info.plist */,
+			);
+			path = QuadKitTests;
+			sourceTree = "<group>";
+		};
 		B238C95B1E46D7BF003A7E84 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +207,7 @@
 				B238C95B1E46D7BF003A7E84 /* Examples */,
 				B2D1614D1E4EC51B00A47871 /* Binding Support */,
 				B2AE567F1E36DA4400A52111 /* Source */,
+				B210CDB21E66E04B004FC046 /* QuadKitTests */,
 				B2AE567E1E36DA4400A52111 /* Products */,
 				B2FDC67A1E646A8F004090F7 /* Frameworks */,
 			);
@@ -184,6 +220,7 @@
 				B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */,
 				B238C9221E45A05F003A7E84 /* QuadKit macOS Example.app */,
 				B238C9441E46D595003A7E84 /* QuadKit iOS Example.app */,
+				B210CDB11E66E04B004FC046 /* QuadKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +231,7 @@
 				B2AE569F1E36E66600A52111 /* QuadClient.swift */,
 				B2D161401E4EB46300A47871 /* BindingSupport.swift */,
 				B2214CF11E41FC1500736446 /* InputController.swift */,
+				B210CDC01E66EB6C004FC046 /* InputState.swift */,
 				B2D161431E4EC2E800A47871 /* Info.plist */,
 			);
 			name = Source;
@@ -238,6 +276,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B210CDB01E66E04B004FC046 /* QuadKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B210CDBB1E66E04B004FC046 /* Build configuration list for PBXNativeTarget "QuadKitTests" */;
+			buildPhases = (
+				B210CDAD1E66E04B004FC046 /* Sources */,
+				B210CDAE1E66E04B004FC046 /* Frameworks */,
+				B210CDAF1E66E04B004FC046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B210CDB81E66E04B004FC046 /* PBXTargetDependency */,
+			);
+			name = QuadKitTests;
+			productName = QuadKitTests;
+			productReference = B210CDB11E66E04B004FC046 /* QuadKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B238C9211E45A05F003A7E84 /* QuadKit macOS Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B238C92E1E45A060003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit macOS Example" */;
@@ -323,6 +379,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Gabrieloc;
 				TargetAttributes = {
+					B210CDB01E66E04B004FC046 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = USYSB33394;
+						ProvisioningStyle = Automatic;
+					};
 					B238C9211E45A05F003A7E84 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4P4TWK8BKZ;
@@ -362,11 +423,19 @@
 				B2CFD77F1E43839B0093C526 /* QuadKit_macOS */,
 				B238C9431E46D595003A7E84 /* QuadKit iOS Example */,
 				B238C9211E45A05F003A7E84 /* QuadKit macOS Example */,
+				B210CDB01E66E04B004FC046 /* QuadKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B210CDAF1E66E04B004FC046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B238C9201E45A05F003A7E84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +506,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B210CDAD1E66E04B004FC046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B210CDBD1E66E06E004FC046 /* InputTests.swift in Sources */,
+				B210CDBF1E66E148004FC046 /* QuadKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B238C91E1E45A05F003A7E84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +541,7 @@
 			files = (
 				B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */,
 				B2D161411E4EB46300A47871 /* BindingSupport.swift in Sources */,
+				B210CDC11E66EB6C004FC046 /* InputState.swift in Sources */,
 				B2214CF21E41FC1500736446 /* InputController.swift in Sources */,
 				B2AE56A01E36E66600A52111 /* QuadClient.swift in Sources */,
 			);
@@ -474,6 +553,7 @@
 			files = (
 				B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */,
 				B2CFD7901E4383FC0093C526 /* QuadClient.swift in Sources */,
+				B210CDC21E66EB6C004FC046 /* InputState.swift in Sources */,
 				B2D161421E4EB46300A47871 /* BindingSupport.swift in Sources */,
 				B2CFD7921E4384130093C526 /* InputController.swift in Sources */,
 			);
@@ -482,6 +562,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B210CDB81E66E04B004FC046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2AE567C1E36DA4400A52111 /* QuadKit_iOS */;
+			targetProxy = B210CDB71E66E04B004FC046 /* PBXContainerItemProxy */;
+		};
 		B238C9961E46EE7A003A7E84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B2CFD77F1E43839B0093C526 /* QuadKit_macOS */;
@@ -522,6 +607,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B210CDB91E66E04B004FC046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = USYSB33394;
+				INFOPLIST_FILE = QuadKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B210CDBA1E66E04B004FC046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = USYSB33394;
+				INFOPLIST_FILE = QuadKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B238C92F1E45A060003A7E84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -797,6 +906,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B210CDBB1E66E04B004FC046 /* Build configuration list for PBXNativeTarget "QuadKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B210CDB91E66E04B004FC046 /* Debug */,
+				B210CDBA1E66E04B004FC046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B238C92E1E45A060003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit macOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
