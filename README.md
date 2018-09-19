@@ -9,8 +9,11 @@ QuadKit powers [SCARAB](https://itunes.apple.com/us/app/scarab-rc-controller-for
 ## Installation
 
 Add this to your Cartfile:
-
 `github "gabrieloc/QuadKit"`
+
+To test the examples, make sure [Carthage](https://github.com/Carthage/Carthage#installing-carthage) is installed, then run:
+
+`carthage update`
 
 
 ## Integration
