@@ -23,7 +23,6 @@
 		B238C9921E46E4AD003A7E84 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9911E46E4AD003A7E84 /* ExampleView.swift */; };
 		B238C9941E46E4C9003A7E84 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238C9931E46E4C9003A7E84 /* ExampleView.swift */; };
 		B238C9971E46EF8D003A7E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B238C9831E46D7CE003A7E84 /* Main.storyboard */; };
-		B238C9981E46EFA5003A7E84 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B238C9851E46D7CE003A7E84 /* Info.plist */; };
 		B238C99C1E46F2BE003A7E84 /* QuadKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */; };
 		B238C9A11E470450003A7E84 /* QuadKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; };
 		B238C9A21E470450003A7E84 /* QuadKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -32,8 +31,6 @@
 		B2CFD7921E4384130093C526 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
 		B2D161411E4EB46300A47871 /* BindingSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* BindingSupport.swift */; };
 		B2D161421E4EB46300A47871 /* BindingSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* BindingSupport.swift */; };
-		B2D161441E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
-		B2D161451E4EC2E800A47871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D161431E4EC2E800A47871 /* Info.plist */; };
 		B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
 		B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
 		B2FDC67C1E646A8F004090F7 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FDC67B1E646A8F004090F7 /* SwiftSocket.framework */; };
@@ -373,7 +370,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Gabrieloc;
 				TargetAttributes = {
 					B210CDB01E66E04B004FC046 = {
@@ -383,18 +380,17 @@
 					};
 					B238C9211E45A05F003A7E84 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4P4TWK8BKZ;
 						ProvisioningStyle = Automatic;
 					};
 					B238C9431E46D595003A7E84 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = USYSB33394;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					B2AE567C1E36DA4400A52111 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = USYSB33394;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 					B2CFD77F1E43839B0093C526 = {
@@ -437,7 +433,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B238C9981E46EFA5003A7E84 /* Info.plist in Resources */,
 				B238C9971E46EF8D003A7E84 /* Main.storyboard in Resources */,
 				B238C9881E46D7CE003A7E84 /* Assets.xcassets in Resources */,
 			);
@@ -457,7 +452,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D161441E4EC2E800A47871 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +459,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D161451E4EC2E800A47871 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4P4TWK8BKZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -650,7 +643,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4P4TWK8BKZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -666,13 +659,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = USYSB33394;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -681,13 +675,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = USYSB33394;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -700,15 +695,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -753,15 +756,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -814,7 +825,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -841,7 +853,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -909,6 +922,7 @@
 				B210CDBA1E66E04B004FC046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B238C92E1E45A060003A7E84 /* Build configuration list for PBXNativeTarget "QuadKit macOS Example" */ = {
 			isa = XCConfigurationList;
