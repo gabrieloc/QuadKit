@@ -333,7 +333,6 @@
 				B2AE56791E36DA4400A52111 /* Frameworks */,
 				B2AE567A1E36DA4400A52111 /* Headers */,
 				B2AE567B1E36DA4400A52111 /* Resources */,
-				B2FDC6801E646AE1004090F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -352,7 +351,6 @@
 				B2CFD77C1E43839B0093C526 /* Frameworks */,
 				B2CFD77D1E43839B0093C526 /* Headers */,
 				B2CFD77E1E43839B0093C526 /* Resources */,
-				B2FDC67F1E646AC6004090F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -463,37 +461,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B2FDC67F1E646AC6004090F7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/SwiftSocket.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		B2FDC6801E646AE1004090F7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftSocket.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B210CDAD1E66E04B004FC046 /* Sources */ = {
@@ -818,6 +785,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -845,6 +813,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 			};
 			name = Release;
 		};
