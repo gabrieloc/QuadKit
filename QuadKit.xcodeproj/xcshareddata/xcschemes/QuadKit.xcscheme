@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B2AE567C1E36DA4400A52111"
-               BuildableName = "QuadKit_iOS.framework"
-               BlueprintName = "QuadKit_iOS"
+               BuildableName = "QuadKit.framework"
+               BlueprintName = "QuadKit"
                ReferencedContainer = "container:QuadKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,8 +31,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B2AE567C1E36DA4400A52111"
-            BuildableName = "QuadKit_iOS.framework"
-            BlueprintName = "QuadKit_iOS"
+            BuildableName = "QuadKit.framework"
+            BlueprintName = "QuadKit"
             ReferencedContainer = "container:QuadKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B2AE567C1E36DA4400A52111"
-            BuildableName = "QuadKit_iOS.framework"
-            BlueprintName = "QuadKit_iOS"
+            BuildableName = "QuadKit.framework"
+            BlueprintName = "QuadKit"
             ReferencedContainer = "container:QuadKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B2AE567C1E36DA4400A52111"
-            BuildableName = "QuadKit_iOS.framework"
-            BlueprintName = "QuadKit_iOS"
+            BuildableName = "QuadKit.framework"
+            BlueprintName = "QuadKit"
             ReferencedContainer = "container:QuadKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
