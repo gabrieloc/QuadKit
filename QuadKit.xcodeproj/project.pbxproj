@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,8 @@
 		B238C99C1E46F2BE003A7E84 /* QuadKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */; };
 		B238C9A11E470450003A7E84 /* QuadKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; };
 		B238C9A21E470450003A7E84 /* QuadKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B270DC4329F2CD0F00D9B1D2 /* SwiftSocket in Frameworks */ = {isa = PBXBuildFile; productRef = B270DC4229F2CD0F00D9B1D2 /* SwiftSocket */; };
+		B270DC4529F2CD3100D9B1D2 /* SwiftSocket in Frameworks */ = {isa = PBXBuildFile; productRef = B270DC4429F2CD3100D9B1D2 /* SwiftSocket */; };
 		B2AE56A01E36E66600A52111 /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
 		B2CFD7901E4383FC0093C526 /* QuadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE569F1E36E66600A52111 /* QuadClient.swift */; };
 		B2CFD7921E4384130093C526 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2214CF11E41FC1500736446 /* InputController.swift */; };
@@ -33,8 +35,6 @@
 		B2D161421E4EB46300A47871 /* BindingSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D161401E4EB46300A47871 /* BindingSupport.swift */; };
 		B2D1614F1E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
 		B2D161501E4EC74500A47871 /* EachineE10W.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1614E1E4EC74500A47871 /* EachineE10W.swift */; };
-		B2FDC67C1E646A8F004090F7 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FDC67B1E646A8F004090F7 /* SwiftSocket.framework */; };
-		B2FDC67E1E646A96004090F7 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FDC67D1E646A96004090F7 /* SwiftSocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +101,6 @@
 		B2D161401E4EB46300A47871 /* BindingSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingSupport.swift; sourceTree = "<group>"; };
 		B2D161431E4EC2E800A47871 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D1614E1E4EC74500A47871 /* EachineE10W.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachineE10W.swift; sourceTree = "<group>"; };
-		B2FDC67B1E646A8F004090F7 /* SwiftSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSocket.framework; path = Carthage/Build/iOS/SwiftSocket.framework; sourceTree = "<group>"; };
-		B2FDC67D1E646A96004090F7 /* SwiftSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSocket.framework; path = Carthage/Build/Mac/SwiftSocket.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FDC67C1E646A8F004090F7 /* SwiftSocket.framework in Frameworks */,
+				B270DC4329F2CD0F00D9B1D2 /* SwiftSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FDC67E1E646A96004090F7 /* SwiftSocket.framework in Frameworks */,
+				B270DC4529F2CD3100D9B1D2 /* SwiftSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +242,6 @@
 		B2FDC67A1E646A8F004090F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2FDC67D1E646A96004090F7 /* SwiftSocket.framework */,
-				B2FDC67B1E646A8F004090F7 /* SwiftSocket.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -339,6 +335,9 @@
 			dependencies = (
 			);
 			name = QuadKit_iOS;
+			packageProductDependencies = (
+				B270DC4229F2CD0F00D9B1D2 /* SwiftSocket */,
+			);
 			productName = QuadKit;
 			productReference = B2AE567D1E36DA4400A52111 /* QuadKit_iOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -357,6 +356,9 @@
 			dependencies = (
 			);
 			name = QuadKit_macOS;
+			packageProductDependencies = (
+				B270DC4429F2CD3100D9B1D2 /* SwiftSocket */,
+			);
 			productName = QuadKit_macOS;
 			productReference = B2CFD7801E43839B0093C526 /* QuadKit_macOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -367,8 +369,9 @@
 		B2AE56741E36DA4400A52111 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Gabrieloc;
 				TargetAttributes = {
 					B210CDB01E66E04B004FC046 = {
@@ -406,6 +409,9 @@
 				Base,
 			);
 			mainGroup = B2AE56731E36DA4400A52111;
+			packageReferences = (
+				B270DC4129F2CD0F00D9B1D2 /* XCRemoteSwiftPackageReference "SwiftSocket" */,
+			);
 			productRefGroup = B2AE567E1E36DA4400A52111 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -568,7 +574,11 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = USYSB33394;
 				INFOPLIST_FILE = QuadKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -579,7 +589,11 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = USYSB33394;
 				INFOPLIST_FILE = QuadKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -591,10 +605,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -607,10 +624,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -624,8 +644,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -638,8 +660,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "QuadKit Examples/iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrieloc.QuadKit-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -669,6 +693,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -694,7 +719,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -731,6 +755,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -750,10 +775,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -774,14 +799,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = QuadKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -802,14 +833,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = QuadKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -822,11 +859,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -834,8 +873,13 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = QuadKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -848,11 +892,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -860,8 +906,13 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = QuadKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieloc.QuadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -927,6 +978,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B270DC4129F2CD0F00D9B1D2 /* XCRemoteSwiftPackageReference "SwiftSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trisbee/SwiftSocket.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B270DC4229F2CD0F00D9B1D2 /* SwiftSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B270DC4129F2CD0F00D9B1D2 /* XCRemoteSwiftPackageReference "SwiftSocket" */;
+			productName = SwiftSocket;
+		};
+		B270DC4429F2CD3100D9B1D2 /* SwiftSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B270DC4129F2CD0F00D9B1D2 /* XCRemoteSwiftPackageReference "SwiftSocket" */;
+			productName = SwiftSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2AE56741E36DA4400A52111 /* Project object */;
 }

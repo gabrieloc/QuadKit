@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/trisbee/SwiftSocket.git",
+      "state" : {
+        "revision" : "a7e958beb73c5a87cc6315b8a29b67e98138967f",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
