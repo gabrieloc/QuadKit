@@ -32,25 +32,25 @@
 //
 
 import XCTest
-@testable import QuadKit_iOS
+@testable import QuadKit
 
 class InputStateTests: XCTestCase {
 	
 	func createInputStateMax() -> InputState {
 		var inputState = InputState()
-		inputState.thrust = DBL_MAX
-		inputState.pitch = DBL_MAX
-		inputState.roll = DBL_MAX
-		inputState.yaw = DBL_MAX
+		inputState.thrust = Double.greatestFiniteMagnitude
+		inputState.pitch = Double.greatestFiniteMagnitude
+		inputState.roll = Double.greatestFiniteMagnitude
+		inputState.yaw = Double.greatestFiniteMagnitude
 		return inputState
 	}
 	
 	func createInputStateMin() -> InputState {
 		var inputState = InputState()
-		inputState.thrust = -DBL_MAX
-		inputState.pitch = -DBL_MAX
-		inputState.roll = -DBL_MAX
-		inputState.yaw = -DBL_MAX
+		inputState.thrust = -Double.greatestFiniteMagnitude
+		inputState.pitch = -Double.greatestFiniteMagnitude
+		inputState.roll = -Double.greatestFiniteMagnitude
+		inputState.yaw = -Double.greatestFiniteMagnitude
 		return inputState
 	}
 	

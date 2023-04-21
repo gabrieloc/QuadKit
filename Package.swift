@@ -4,9 +4,6 @@ import PackageDescription
 
 let package = Package(
     name: "QuadKit",
-    platforms: [
-        .macOS(.v10_14), .iOS(.v13), .tvOS(.v13)
-    ],
     products: [
         .library(
             name: "QuadKit",
@@ -18,9 +15,11 @@ let package = Package(
     targets: [
         .target(
             name: "QuadKit",
-            dependencies: []),
+            dependencies: ["SwiftSocket"]
+        ),
         .testTarget(
             name: "QuadKitTests",
-            dependencies: ["QuadKit"]),
+            dependencies: ["QuadKit"]
+        ),
     ]
 )
